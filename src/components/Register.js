@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const API = '/api';
+const API = 'http://3.21.241.136:4000';
 
 function Register() {
   const [form, setForm] = useState({
