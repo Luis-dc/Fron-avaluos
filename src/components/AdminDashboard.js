@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 
-const API = 'http://3.21.241.136:4000';
+const API = '/api';
 
 
 // === Componente inline: NO requiere import ===
@@ -138,9 +138,9 @@ export default function AdminDashboard() {
                   {fxApprovedId===u.id && <ApprovalCheck size={26} />}
                 </td>
                 <td style={{maxWidth:260}}>
-                  {u.dpi_archivo && <a href={`${API}/uploads/${u.dpi_archivo}`} target="_blank" rel="noreferrer">DPI</a>} {' '}
-                  {u.diploma_archivo && <a href={`${API}/uploads/${u.diploma_archivo}`} target="_blank" rel="noreferrer">Diploma</a>} {' '}
-                  {u.cv_archivo && <a href={`${API}/uploads/${u.cv_archivo}`} target="_blank" rel="noreferrer">CV</a>}
+                {u.dpi_archivo && <a href={`/uploads/${u.dpi_archivo}`} target="_blank" rel="noreferrer">DPI</a>}
+                {u.diploma_archivo && <a href={`/uploads/${u.diploma_archivo}`} target="_blank" rel="noreferrer">Diploma</a>}
+                {u.cv_archivo && <a href={`/uploads/${u.cv_archivo}`} target="_blank" rel="noreferrer">CV</a>}
                 </td>
                 <td>
                   <div className="btn-group">

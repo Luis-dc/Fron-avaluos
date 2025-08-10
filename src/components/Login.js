@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const API = 'http://3.21.241.136:4000';
+const API = '/api';
 
 function Login() {
   const [correo, setCorreo] = useState('');

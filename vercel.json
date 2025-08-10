@@ -1,0 +1,9 @@
+{
+    "buildCommand": "npm run build",
+    "outputDirectory": "build",
+    "rewrites": [
+      { "source": "/api/(.*)", "destination": "http://3.21.241.136:4000/api/$1" },
+      { "source": "/uploads/(.*)", "destination": "http://3.21.241.136:4000/uploads/$1" }
+    ]
+  }
+  
