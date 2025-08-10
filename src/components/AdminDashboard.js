@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 
-const API = 'http://localhost:4000';
+const API = 'http://3.21.241.136:4000';
 
 
 // === Componente inline: NO requiere import ===
